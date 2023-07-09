@@ -1,0 +1,26 @@
+{
+  "configuration": {
+    "status": "error",
+    "name": "Log4j2ExampleApplication",
+    "packages": "com.aprendekomodo",
+    "ThresholdFilter": {
+      "level": "debug"
+    },
+    "appenders": {
+      "Console": {
+        "name": "STDOUT",
+        "PatternLayout": {
+          "pattern": "%d{dd MMM yyyy HH:mm:ss.SSS} %-5level %X{context} %X{classMethod} - %m%n"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "info",
+        "AppenderRef": {
+          "ref": "STDOUT"
+        }
+      }
+    }
+  }
+}

@@ -23,7 +23,7 @@ public class ApiRestController {
         MDC.put("context", context);
         MDC.put("classMethod", "ApiRestController.getOk");
         logger.info("Response OK");
-        
+
         return ResponseEntity.ok("OK");
     }
 
